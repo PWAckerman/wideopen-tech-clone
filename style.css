@@ -1,0 +1,546 @@
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+/**{
+    border: 1px solid black;
+}*/
+.oswald{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+.light{
+  font-weight: 300;
+}
+.loud{
+  font-weight: 700;
+}
+.techbox{
+  width: 192px;
+  height: 190px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.bottom-text{
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.jumbo{
+  font-size: 150px;
+}
+
+.sprite-mobile, .sprite-commerce, .sprite-software, .sprite-system, .sprite-technical, .sprite-work {
+  background-image: url('sprite_home.png');
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.sprite-client1, .sprite-client2, .sprite-client3, .sprite-client4, .sprite-client5, .sprite-client6,
+.sprite-client7, .sprite-client8, .sprite-client9, .sprite-client10 {
+  background-image: url('sprite_client_logos.jpg');
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  display: inline-block;
+  transition: .5s;
+}
+
+.sprite-client1{
+  width: 245px;
+  height: 125px;
+  background-position: 13px -7px;
+}
+
+.sprite-client1:hover{
+  background-position: 13px -7px;
+}
+
+.sprite-client2{
+  width: 245px;
+  height: 125px;
+  background-position: -330px 1px;
+}
+
+.sprite-client3{
+  width: 245px;
+  height: 125px;
+  background-position: -640px 1px
+}
+
+.sprite-client4{
+  width: 245px;
+  height: 125px;
+  background-position: 1px -136px;
+}
+
+.sprite-client5{
+  width: 245px;
+  height: 125px;
+  background-position: -314px -136px;
+}
+
+.sprite-client6{
+  width: 245px;
+  height: 125px;
+  background-position: -640px -136px;
+}
+
+.sprite-client7{
+  width: 245px;
+  height: 125px;
+  background-position: 1px -280px;
+}
+
+.sprite-client8{
+  width: 245px;
+  height: 125px;
+  background-position: -320px -280px;
+}
+
+.sprite-client9{
+  width: 245px;
+  height: 125px;
+  background-position: -640px -280px;
+}
+
+.client-box{
+  width: 100%;
+  max-width: 950px;
+  display: inline-block;
+}
+
+
+.sprite-work {
+  width: 75px;
+  height: 75px;
+  background-position: -22px -113px;
+}
+
+.sprite-mobile {
+  width: 60px;
+  height: 90px;
+  background-position: -131px 0;
+}
+
+.sprite-commerce{
+  width: 92px;
+  height: 90px;
+  background-position: -316px 0;
+}
+
+.sprite-software{
+  height: 90px;
+  width:  76px;
+  background-position: -426px 0;
+}
+
+.sprite-system{
+  height: 90px;
+  width:  76px;
+  background-position: -22px 0;
+}
+
+.sprite-technical{
+  height: 90px;
+  width:  66px;
+  background-position: -226px 0;
+}
+
+.mid {
+  font-size: 20px;
+}
+
+@media (max-width: 740px) {
+  .jumbo{
+    font-size: 15vw;
+  }
+  .align-small{
+    text-align: center;
+  }
+  .text-left{
+
+  }
+}
+
+.lightgray{
+  background-color: rgb(244, 244, 244);
+}
+
+.clients{
+
+}
+
+.row{
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+}
+
+.wide-open{
+  font-size: 24px;
+  line-height: 40px;
+  color: rgb(55, 106, 120);
+}
+
+.padding-bottom{
+  padding-bottom: 40px;
+}
+
+.padding-top{
+  padding-top: 40px;
+}
+
+.grayf{
+    color: rgb(172, 172, 172);
+}
+
+.orange{
+  color: rgb(255, 184, 27);
+}
+.green{
+  color: rgb(83, 255, 55);
+}
+.turq{
+  background-color: rgb(106, 209, 219);
+}
+
+.lime{
+  background-color: #bdd537;
+}
+
+.greenb{
+  background-color: rgb(83, 255, 55);
+}
+@media (min-width: 600px)  {
+  .left{
+    width: 50%;
+    height: 455px;
+    min-height: 100px;
+    /*float:left;*/
+    background: url(wilmington.jpg);
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .right{
+    width: 50%;
+    height: 455px;
+    min-height: 100px;
+    float:right;
+    background: url(asheville.jpg);
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.no-margin{
+  margin: 0px;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.input-container{
+  background-color: white;
+  height: 35px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.submit-button{
+  height: 30px;
+  width: 80px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  float: right;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.submit-button:hover{
+  height: 30px;
+  width: 80px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  float: right;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: .5s;
+  background-color: rgb(173, 251, 75);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(83, 112, 124);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(83, 112, 124);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(83, 112, 124);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(83, 112, 124);
+}
+
+.goodcolor{
+  background-color: rgb(101, 155, 161);
+}
+
+.goodcolor2{
+  background-color: rgb(83, 112, 124);
+}
+
+
+.black-box{
+  width: 60%;
+  height: auto;
+  min-height: 100px;
+  display: inline-block;
+  margin-top: 20%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+@media (max-width: 700px)  {
+  .left{
+    width: 100%;
+    height: 455px;
+    min-height: 100px;
+    float:left;
+    background: url(wilmington.jpg);
+    background-size: cover;
+    display: inline-block;
+  }
+
+  .right{
+    width: 100%;
+    height: 455px;
+    min-height: 100px;
+    float:right;
+    background: url(asheville.jpg);
+    background-size: cover;
+    display: inline-block;
+  }
+}
+
+.limef{
+  color: rgb(147, 212, 65);
+}
+
+.gray{
+  background-color: rgb(62, 62, 62);
+}
+.cobalt{
+  background-color: rgb(68, 116, 161);
+}
+.foam{
+  background-color: rgb(0, 255, 201);
+}
+
+.medium{
+  font-size: 40px;
+}
+
+.line-height{
+  line-height: 140px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+
+.wrapper{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.text-container{
+  width: auto;
+  max-width: 900px;
+  /*background-color: black;*/
+  display: inline-block;
+}
+
+.block{
+  display: block;
+}
+
+.float-right{
+  float: right;
+}
+
+.100px{
+  height: 100px;
+}
+
+.small{
+  font-size: 18px;
+}
+
+.center-y{
+  margin-top: 50%;
+}
+
+.navitem{
+  padding: 5px;
+}
+
+@media (min-width: 875px) {
+  .column{
+    width: 36%;
+    height: auto;
+    /*background-color: white;*/
+    min-height: 400px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 875px) {
+  .column{
+    width: 90%;
+    height: auto;
+    /*background-color: white;*/
+    min-height: 400px;
+    display: block;
+  }
+}
+
+
+.line-height2{
+  line-height: 24px;
+}
+
+.box{
+  width: 90%;
+  height: auto;
+  min-height: 100px;
+  background-color: white;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+.margin-top{
+  margin-top: 40px;
+}
+
+.navbar {
+  width:100%;
+  height: 100px;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.44);
+  display: inline-block;
+  text-align: left;
+  color: white;
+  font-size: 17px;
+}
+
+.white{
+  background-color: white;
+}
+
+.whitef{
+  color: white;
+}
+
+.last{
+  margin-right: 20px;
+}
+
+
+@media (max-width: 875px) {
+  .smallhide {
+    display: none;
+  }
+  .bighide {
+    display: inherit;
+  }
+}
+@media (min-width: 875px) {
+  .smallhide {
+    display: inherit;
+  }
+  .bighide {
+    display: none !important;
+  }
+}
+
+.hamburger{
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.hambtn{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 900px;
+  text-align:center;
+}
+
+.masthead{
+  width: 100%;
+  height: auto;
+  background: url(wot-masthead-dark.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.corner{
+  height: 50px;
+  margin: 25px;
+  display: inline-block;
+}
+
+.spacer{
+  width: 100%;
+  height: 20px;
+}
+@media (min-width: 740px) {
+.text-left{
+  text-align: left;
+}
+.line-height3{
+  line-height: 6px;
+}
+}
+
+.margin-minus{
+  margin-top: -20px;
+}
