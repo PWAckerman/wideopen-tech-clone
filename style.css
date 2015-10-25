@@ -432,6 +432,14 @@ input {
     margin-top: 20px;
     padding: 20px;
   }
+  .masthead{
+    width: 100%;
+    height: auto;
+    background: url(wot-masthead-dark.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+  }
 }
 
 @media (max-width: 875px) {
@@ -451,9 +459,18 @@ input {
     margin-top: 20px;
     padding: 20px;
   }
+  .masthead{
+    width: 100%;
+    height: auto;
+    background: url(wot-masthead-dark.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: -200px;
+  }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .column{
     width: 90%;
     height: auto;
@@ -472,6 +489,15 @@ input {
     display: inline-block;
     margin-top: 20px;
     padding: 20px;
+  }
+  .masthead{
+    width: 100%;
+    height: auto;
+    background: url(wot-masthead-dark.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: -500px;
   }
 }
 
@@ -514,7 +540,7 @@ input {
 
 @media (max-width: 875px) {
   .smallhide {
-    display: none;
+    display: none !important;
   }
   .bighide {
     display: inherit;
@@ -549,13 +575,7 @@ input {
   text-align:center;
 }
 
-.masthead{
-  width: 100%;
-  height: auto;
-  background: url(wot-masthead-dark.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-}
+
 
 .corner{
   height: 50px;
