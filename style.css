@@ -19,10 +19,10 @@ body {
   font-weight: 700;
 }
 .techbox{
-  width: 192px;
+  width: 190px;
   height: 190px;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
@@ -316,7 +316,7 @@ input {
 
 
 .black-box{
-  width: 60%;
+  width: 50%;
   height: auto;
   min-height: 100px;
   display: inline-block;
@@ -359,7 +359,7 @@ input {
   background-color: rgb(68, 116, 161);
 }
 .foam{
-  background-color: rgb(0, 255, 201);
+  background-color: rgb(38, 215, 178);
 }
 
 .medium{
@@ -381,7 +381,9 @@ input {
 }
 
 .text-container{
-  width: auto;
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
   max-width: 900px;
   /*background-color: black;*/
   display: inline-block;
@@ -416,8 +418,19 @@ input {
     width: 36%;
     height: auto;
     /*background-color: white;*/
+    margin-right: 10px;
+    margin-left: 10px;
     min-height: 400px;
     display: inline-block;
+  }
+  .box{
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
   }
 }
 
@@ -427,7 +440,38 @@ input {
     height: auto;
     /*background-color: white;*/
     min-height: 400px;
-    display: block;
+    display: inline-block;
+  }
+  .box{
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .column{
+    width: 90%;
+    height: auto;
+    /*background-color: white;*/
+    min-height: 400px;
+    max-width: 250px;
+    display: inline-block;
+  }
+
+  .box{
+    width: 90%;
+    height: auto;
+    max-width: 250px;
+    min-height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
   }
 }
 
@@ -436,15 +480,7 @@ input {
   line-height: 24px;
 }
 
-.box{
-  width: 90%;
-  height: auto;
-  min-height: 100px;
-  background-color: white;
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-}
+
 
 
 
@@ -456,7 +492,7 @@ input {
   width:100%;
   height: 100px;
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.44);
+  /*background-color: rgba(0, 0, 0, 0.44);*/
   display: inline-block;
   text-align: left;
   color: white;
@@ -531,6 +567,69 @@ input {
   width: 100%;
   height: 20px;
 }
+.flip-container {
+  margin-left: -3px;
+  margin-right: 0px;
+  display: inline-block;
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+  width: 190px;
+  height: 190px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+  transition: 0.5s;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  transition: 0.5s;
+}
+
+.backside{
+  text-align: left !important;
+  padding-left: 20px;
+  padding-right: 25px;
+  font-size: 19px;
+  padding-top: 15px;
+}
+
+.more{
+  background-image: url("sprite_home.png");
+  background-position: -37px -262px;
+  position: absolute;
+  bottom: 0;
+  right: 0.5em;
+  height: 27px;
+  width: 51px;
+}
+
 @media (min-width: 740px) {
 .text-left{
   text-align: left;

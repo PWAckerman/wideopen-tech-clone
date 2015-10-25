@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>WideOpenTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -37,11 +38,31 @@
         </div>
       </div>
       <div class="wrapper oswald light margin-top">
-        <div class="techbox foam"><div class="sprite-mobile"></div><div class="bottom-text">Mobile<br> Applications</div></div>
-        <div class="techbox cobalt"><div class="sprite-commerce"></div><div class="bottom-text">eCommerce<br> Solutions</div></div>
-        <div class="techbox gray"><div class="sprite-software"></div><div class="bottom-text">Custom<br> Software</div></div>
-        <div class="techbox turq"><div class="sprite-system"></div><div class="bottom-text">System<br> Integration</div></div>
-        <div class="techbox lime"><div class="sprite-technical"></div><div class="bottom-text">Integrate a <br>Technical Team</div></div>
+        <div class='flip-container' ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front techbox foam">
+              <div class="sprite-mobile"></div>
+              <div class="bottom-text">Mobile<br> Applications</div>
+            </div>
+            <div class="techbox foam back">
+              <div class="backside">Create an exceptional User Experience on any device!<span class="more"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class='flip-container' ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front techbox cobalt">
+              <div class="sprite-commerce"></div>
+              <div class="bottom-text">eCommerce<br> Solutions</div>
+            </div>
+            <div class="techbox cobalt back">
+              <div class="backside">Tailored, integrated, and built just for you!<span class="more"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class='flip-container' ontouchstart="this.classList.toggle('hover');"><div class="flipper"><div class="front techbox gray"><div class="sprite-software"></div><div class="bottom-text">Custom<br> Software</div></div><div class="techbox gray back"><div class="backside">You have problems. We build solutions.<span class="more"></span></div></div></div></div>
+        <div class='flip-container' ontouchstart="this.classList.toggle('hover');"><div class="flipper"><div class="front techbox turq"><div class="sprite-system"></div><div class="bottom-text">System<br> Integration</div></div><div class="techbox turq back"><div class="backside">Business is better when everything works together<span class="more"></span></div></div></div></div>
+        <div class='flip-container' ontouchstart="this.classList.toggle('hover');"><div class="flipper"><div class="front techbox lime"><div class="sprite-technical"></div><div class="bottom-text">Integrate a <br>Technical Team</div></div><div class="techbox lime back"><div class="backside">Our digital workshop is your company's technology department<span class="more"></span></div></div></div></div>
       </div>
     </div>
     <div class="row lightgray">
@@ -60,8 +81,10 @@
     <div class="row lightgray" style="padding-top: 1px;">
       <div class="wrapper margin-top">
         <div class="wide-open oswald light medium margin-top">HOW CAN WE <span class="limef"><b>HELP?</b></span></div>
-        <p class="wide-open"><b>Here are just a few of the ways Wide Open can help you and your business</b></p>
+        <p class="wide-open" style="margin-left: 20px; margin-right: 20px;"><b>Here are just a few of the ways Wide Open can help you and your business</b></p>
+        <div class="wrapper">
         <div class="column">
+          <div class="wrapper">
           <div class="box">
             <span class="wide-open line-height2">Repair or modify existing software</span>
           </div>
@@ -74,7 +97,9 @@
             <span class="wide-open grayf small line-height2">Have a digital idea? We turn it into something you can show investors.</span>
           </div>
         </div>
+        </div>
         <div class="column">
+          <div class="wrapper">
           <div class="box">
               <span class="wide-open line-height2">Be your multi-talented technology department</span><br>
               <span class="wide-open grayf small line-height2">Rely on us for consistent management and maintenance of the digital side of your business.</span>
@@ -84,6 +109,8 @@
               <span class="wide-open grayf small line-height2">Customized functionality tailored to your business</span>
           </div>
         </div>
+        </div>
+      </div>
       </div>
     </div>
     <div class="row white">
@@ -96,20 +123,23 @@
       <div class="wrapper padding-top">
         <div class="wide-open oswald light medium whitef">COMPANIES WE WORK WITH</div><br>
         <div class="client-box">
-        <div class="sprite-client1"></div>
-        <div class="sprite-client2"></div>
-        <div class="sprite-client3"></div>
-        <div class="sprite-client4"></div>
-        <div class="sprite-client5"></div>
-        <div class="sprite-client6"></div>
-        <div class="sprite-client7"></div>
-        <div class="sprite-client8"></div>
-        <div class="sprite-client9"></div>
+          <div class="sprite-client1"></div>
+          <div class="sprite-client2"></div>
+          <div class="sprite-client3"></div>
+          <div class="sprite-client4"></div>
+          <div class="sprite-client5"></div>
+          <div class="sprite-client6"></div>
+          <div class="sprite-client7"></div>
+          <div class="sprite-client8"></div>
+          <div class="sprite-client9"></div>
+        </div>
       </div>
-      </div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
     </div>
     <div class="row">
       <div class="left">
+        <div class="wrapper">
         <div class="black-box">
           <p class="text-left medium limef line-height2" style="margin-top: -2px;">Wilmington</p>
           <p class="text-left whitef line-height3 margin-minus">1994-400 Eastwood Road</p>
@@ -118,7 +148,9 @@
           <p  class="text-left " ><a href="mailto:ocean@wideopentech.com" class="limef" style="text-decoration: none;"><b>ocean@wideopentech.com</b></a></p>
         </div>
       </div>
+      </div>
       <div class="right">
+        <div class="wrapper">
         <div class="black-box">
           <p class="text-left medium limef line-height2" style="margin-top: -2px;">Asheville</p>
           <p class="text-left whitef line-height3 margin-minus">60 N Market st c200</p>
@@ -126,6 +158,7 @@
           <p class="text-left whitef line-height3">866-465-6188</p>
           <p  class="text-left " ><a href="mailto:mountain@wideopentech.com" class="limef" style="text-decoration: none;"><b>mountain@wideopentech.com</b></a></p>
         </div>
+      </div>
       </div>
     </div>
       <div class="row goodcolor">
@@ -141,10 +174,9 @@
           </div>
       </div>
       <div class="row goodcolor2">
-        <div class="container">
+        <div class="wrapper">
           <div class="text-container">
           <div  style="font-size: 10px; display: inline-block; float: left;"><strong>© 2015 Wide Open Technologies - <span class="limef">Privacy</span></strong></div>
-        </div>
           <div class="float-right 100px smallhide">
               <span class="navitem" style="font-size: 13px;">SERVICES</span>
               <span class="navitem" style="font-size: 13px;">ABOUT</span>
@@ -154,6 +186,7 @@
               <span class="navitem" style="font-size: 13px;">CONTACT</span>
           </div>
         </div>
+      </div>
       </div>
   </body>
 </html>
